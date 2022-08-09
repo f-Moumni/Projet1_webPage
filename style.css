@@ -1,0 +1,262 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{  
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-weight: 300; 
+}
+
+/*header*/
+
+.header{
+    background-color: #7451eb;
+    padding: 1.5% 3% 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+       
+}
+
+ .profil-img{
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+     
+ }
+ .profil{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column ;
+            flex-flow: column ;
+ }
+
+ .profil h1  {
+     margin-bottom: 1px;
+     margin-left: 10px;
+    
+ }
+
+.profil > h2{
+    width: 12em;
+    margin:0;
+    margin-left: 10px;
+    -moz-text-align-last: center;
+         text-align-last: center;
+
+}
+
+.profil > p{
+    margin: 10% 0 10% 0;
+    font-size: 1.2em;
+
+}
+
+/*main*/
+
+.main {
+
+
+    margin: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    color: #003668;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding :7% 0;
+      
+}
+.skills {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+/*footer*/
+
+
+.footer{
+    background-color: #003668;
+    padding :6% 5% 6% 16%;
+    font-size : 1.1em;
+}
+
+.footer p{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+   
+}
+.social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+   
+.social a img{
+    height: 100px;
+    width: auto;
+}
+
+.social a {
+   margin-right: 5%;
+}
+
+.Highlight{
+    background-color: #0ceda3;
+    color:  rgb(20, 40, 97);
+    padding: 5px 8px;
+}
+
+/*********************responsive*********/
+
+
+@media screen and (max-width: 900px) {
+
+    body{
+        line-height: 1.2;
+        font-size: 1.1em;
+    }
+
+    .header{
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 1.5% 5% 0 5%;
+      
+    }
+
+    .profil-img{
+        -ms-flex-preferred-size: 15%;
+            flex-basis: 15%;
+         
+     }
+  
+
+    .main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        padding:5%;
+    }
+
+    .skills {  
+        -webkit-box-ordinal-group: 0;  
+            -ms-flex-order: -1;  
+                order: -1;
+      }
+
+    .profil-img{
+        -ms-flex-preferred-size: 15%;
+            flex-basis: 15%;
+        
+    }
+
+    .footer{
+        padding :10%;
+        font-size: 1.1em;
+    }
+
+ 
+ }
+
+ /*********************responsive*********/
+ @media screen and (max-width: 750px) {
+    body{
+        
+        font-size: 1em;
+    }   
+    
+    .profil-img{
+        width: 200px;
+        
+    }
+    
+       
+    }
+ /*********************responsive*********/
+ @media screen and (max-width: 535px) {
+
+    body{
+        font-size: 0.8em;    
+    }  
+    .header{
+         
+        -webkit-box-pack: center;
+        
+            -ms-flex-pack: center;
+        
+                justify-content: center;
+
+                -webkit-box-orient: vertical;
+
+                -webkit-box-direction: normal;
+
+                    -ms-flex-direction: column;
+
+                        flex-direction: column;
+
+               
+    } 
+   .profil-img{
+   
+    -ms-flex-item-align: end;
+   
+        align-self: flex-end;
+        
+    }
+   .profil p{
+       
+        margin-left: 8px;
+        margin-bottom: 2px;
+        margin-top: 5%;
+    }
+    .img-java{
+        display: none;
+    }
+  
+    .footer p{
+
+        line-height: 1.6;
+    }
+       
+    .social a img{
+        height: 80px;
+        width: auto;
+    }
+    
+ }
